@@ -1,6 +1,6 @@
 <?php
 
-namespace CityWifi\ConektaCashier;
+namespace agueric\ConektaCashier;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,7 +23,7 @@ class ConektaCashierServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('CityWifi\ConektaCashier\BillableRepositoryInterface', function () {
+        $this->app->singleton('agueric\ConektaCashier\BillableRepositoryInterface', function () {
             return new EloquentBillableRepository();
         });
         $this->app->singleton('command.conekta.cashier.table', function ($app) {

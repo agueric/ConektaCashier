@@ -1,13 +1,13 @@
 <?php
 
-namespace CityWifi\ConektaCashier;
+namespace agueric\ConektaCashier;
 
 use Carbon\Carbon;
 use Conekta;
 use Conekta_Charge;
 use Conekta_Customer;
 use Conekta_Error;
-use CityWifi\ConektaCashier\Contracts\Billable as BillableContract;
+use agueric\ConektaCashier\Contracts\Billable as BillableContract;
 use InvalidArgumentException;
 
 class ConektaGateway
@@ -15,7 +15,7 @@ class ConektaGateway
     /**
      * The billable instance.
      *
-     * @var \CityWifi\ConektaCashier\Contracts\Billable
+     * @var \agueric\ConektaCashier\Contracts\Billable
      */
     protected $billable;
     /**
@@ -350,7 +350,7 @@ class ConektaGateway
     /**
      * Indicate that no trial should be enforced on the operation.
      *
-     * @return \CityWifi\ConektaCashier\ConektaGateway
+     * @return \agueric\ConektaCashier\ConektaGateway
      */
     public function skipTrial()
     {
@@ -362,7 +362,7 @@ class ConektaGateway
      *
      * @param \DateTime $trialEnd
      *
-     * @return \CityWifi\ConektaCashier\ConektaGateway
+     * @return \agueric\ConektaCashier\ConektaGateway
      */
     public function trialFor(\DateTime $trialEnd)
     {
@@ -381,7 +381,7 @@ class ConektaGateway
     /**
      * Maintain the days left of the current trial (if applicable).
      *
-     * @return \CityWifi\ConektaCashier\ConektaGateway
+     * @return \agueric\ConektaCashier\ConektaGateway
      */
     public function maintainTrial()
     {

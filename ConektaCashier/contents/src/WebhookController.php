@@ -1,6 +1,6 @@
 <?php
 
-namespace CityWifi\ConektaCashier;
+namespace agueric\ConektaCashier;
 
 use Conekta;
 use Conekta_Event;
@@ -66,11 +66,11 @@ class WebhookController extends Controller
      *
      * @param string $conektaId
      *
-     * @return \CityWifi\ConektaCashier\BillableInterface
+     * @return \agueric\ConektaCashier\BillableInterface
      */
     protected function getBillable($conektaId)
     {
-        return App::make('CityWifi\ConektaCashier\BillableRepositoryInterface')->find($conektaId);
+        return App::make('agueric\ConektaCashier\BillableRepositoryInterface')->find($conektaId);
     }
     /**
      * Get the JSON payload for the request.

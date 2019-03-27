@@ -1,5 +1,5 @@
 <?php
-namespace CityWifi\ConektaCashier;
+namespace agueric\ConektaCashier;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Config;
@@ -45,9 +45,9 @@ trait Billable
     /**
      * Get a new billing gateway instance for the given plan.
      *
-     * @param \CityWifi\ConektaCashier\PlanInterface|string|null $plan
+     * @param \agueric\ConektaCashier\PlanInterface|string|null $plan
      *
-     * @return \CityWifi\ConektaCashier\ConektaGateway
+     * @return \agueric\ConektaCashier\ConektaGateway
      */
     public function subscription($plan = null)
     {
@@ -136,7 +136,7 @@ trait Billable
     /**
      * Determine if the entity is on the given plan.
      *
-     * @param \CityWifi\ConektaCashier\PlanInterface|string $plan
+     * @param \agueric\ConektaCashier\PlanInterface|string $plan
      *
      * @return bool
      */
@@ -182,7 +182,7 @@ trait Billable
      *
      * @param bool $active
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setConektaIsActive($active = true)
     {
@@ -192,7 +192,7 @@ trait Billable
     /**
      * Set Conekta as inactive on the entity.
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function deactivateConekta()
     {
@@ -232,7 +232,7 @@ trait Billable
      *
      * @param string $conekta_id
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setConektaId($conekta_id)
     {
@@ -253,7 +253,7 @@ trait Billable
      *
      * @param string $subscription_id
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setConektaSubscription($subscription_id)
     {
@@ -274,7 +274,7 @@ trait Billable
      *
      * @param string $plan
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setConektaPlan($plan)
     {
@@ -293,7 +293,7 @@ trait Billable
     /**
      * Set the last four digits of the entity's credit card.
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setLastFourCardDigits($digits)
     {
@@ -312,7 +312,7 @@ trait Billable
     /**
      * Set the brand of the entity's credit card.
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setCardType($type)
     {
@@ -333,7 +333,7 @@ trait Billable
      *
      * @param \DateTime|null $date
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setTrialEndDate($date)
     {
@@ -354,7 +354,7 @@ trait Billable
      *
      * @param \DateTime|null $date
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setSubscriptionEndDate($date)
     {

@@ -1,6 +1,6 @@
 <?php
-namespace CityWifi\ConektaCashier;
-use CityWifi\ConektaCashier\Contracts\Billable as BillableContract;
+namespace agueric\ConektaCashier;
+use agueric\ConektaCashier\Contracts\Billable as BillableContract;
 use Illuminate\Support\Facades\Config;
 class EloquentBillableRepository implements BillableRepositoryInterface
 {
@@ -9,7 +9,7 @@ class EloquentBillableRepository implements BillableRepositoryInterface
      *
      * @param string $conektaId
      *
-     * @return \CityWifi\ConektaCashier\BillableInterface
+     * @return \agueric\ConektaCashier\BillableInterface
      */
     public function find($conektaId)
     {
@@ -21,7 +21,7 @@ class EloquentBillableRepository implements BillableRepositoryInterface
      *
      * @param string $model
      *
-     * @return \CityWifi\ConektaCashier\BillableInterface
+     * @return \agueric\ConektaCashier\BillableInterface
      */
     protected function createCashierModel($class)
     {

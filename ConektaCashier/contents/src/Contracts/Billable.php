@@ -1,5 +1,5 @@
 <?php
-namespace CityWifi\ConektaCashier\Contracts;
+namespace agueric\ConektaCashier\Contracts;
 interface Billable
 {
     /**
@@ -19,7 +19,7 @@ interface Billable
      *
      * @param string|null $plan
      *
-     * @return \CityWifi\ConektaCashier\Builder
+     * @return \agueric\ConektaCashier\Builder
      */
     public function subscription($plan = null);
     /**
@@ -71,13 +71,13 @@ interface Billable
      *
      * @param bool $active
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setConektaIsActive($active = true);
     /**
      * Set Conekta as inactive on the entity.
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function deactivateConekta();
     /**
@@ -91,7 +91,7 @@ interface Billable
      *
      * @param string $conekta_id
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setConektaId($conekta_id);
     /**
@@ -105,7 +105,7 @@ interface Billable
      *
      * @param string $subscription_id
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setConektaSubscription($subscription_id);
     /**
@@ -117,7 +117,7 @@ interface Billable
     /**
      * Set the last four digits of the entity's credit card.
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setLastFourCardDigits($digits);
     /**
@@ -129,7 +129,7 @@ interface Billable
     /**
      * Set the brand of the entity's credit card.
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setCardType($type);
     /**
@@ -143,7 +143,7 @@ interface Billable
      *
      * @param \DateTime|null $date
      *
-     * @return \CityWifi\ConektaCashier\Contracts\Billable
+     * @return \agueric\ConektaCashier\Contracts\Billable
      */
     public function setTrialEndDate($date);
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace CityWifi\ConektaCashier;
+namespace agueric\ConektaCashier;
 
 interface BillableRepositoryInterface
 {
@@ -9,7 +9,7 @@ interface BillableRepositoryInterface
      *
      * @param string $conektaId
      *
-     * @return \CityWifi\ConektaCashier\BillableInterface
+     * @return \agueric\ConektaCashier\BillableInterface
      */
     public function find($conektaId);
 }

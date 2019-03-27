@@ -1,14 +1,14 @@
 <?php
 
-namespace CityWifi\ConektaCashier;
+namespace agueric\ConektaCashier;
 
-use CityWifi\ConektaCashier\Contracts\Billable as BillableContract;
+use agueric\ConektaCashier\Contracts\Billable as BillableContract;
 class LineItem
 {
     /**
      * The billable instance.
      *
-     * @var \CityWifi\ConektaCashier\Contracts\Billable
+     * @var \agueric\ConektaCashier\Contracts\Billable
      */
     protected $billable;
     /**

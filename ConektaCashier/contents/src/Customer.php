@@ -1,6 +1,6 @@
 <?php
 
-namespace CityWifi\ConektaCashier;
+namespace agueric\ConektaCashier;
 
 use Conekta_Customer;
 

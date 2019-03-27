@@ -1,5 +1,5 @@
 {
-    "name": "citywifi/conektacashier",
+    "name": "agueric/conektacashier",
     "description": "Conekta Integration for Laravel",
     "type": "library",
     "require": {
@@ -18,7 +18,7 @@
     "authors": [
         {
             "name": "Eric Aguilar",
-            "email": "agueric@citywifi.com.mx"
+            "email": "agueric@agueric.com.mx"
         }
     ],
     "minimum-stability": "stable"
