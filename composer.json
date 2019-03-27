@@ -14,7 +14,7 @@
         "illuminate/routing": "^5.7",
         "illuminate/view": "^5.7"
     },
-    "license": "",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Eric Aguilar",
